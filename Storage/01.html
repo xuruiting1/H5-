@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Storage网页换肤效果</title>
+   <style>
+ul{
+           width: 800px;
+height: 40px;
+margin: 0 auto;
+}
+       ul li{
+           width: 100px;
+height: 40px;
+line-height: 40px;
+color: white;
+list-style: none;
+float: left;
+}
+       ul li a{
+           text-decoration: none;
+float: left;
+color: deepskyblue;
+}
+       ul li a:hover{
+        color: aquamarine;
+}
+       div {
+           width: 200px;
+height: 200px;
+margin: 10px auto;
+}
+   </style>
+   <script>
+if(typeof localStorage=='undefined')
+       {
+           window.alert("浏览器不支持localStorage");
+}
+       else
+{
+           var storage=localStorage;
+var colorArray=new Array("blue","green","orange");
+function blueColor()
+           {
+               var div1=document.getElementById("div1");
+div1.style.backgroundColor=colorArray[0];
+window.localStorage.setItem('divBackColor',colorArray[0]);
+}
+           function greenColor()
+           {
+               var div1=document.getElementById("div1");
+div1.style.backgroundColor=colorArray[1];
+window.localStorage.setItem('divBackColor',colorArray[1]);
+}
+           function orangeColor()
+           {
+               var div1=document.getElementById("div1");
+div1.style.backgroundColor=colorArray[2];
+window.localStorage.setItem('divBackColor',colorArray[2]);
+}
+           window.onload=function colorLoad()
+           {
+               document.getElementById("div1").style.backgroundColor=window.localStorage.getItem('divBackColor');
+}
+       }
+   </script>
+</head>
+<body>
+    <ul>
+        <li><a href="#"onclick="blueColor()">蓝色皮肤</a> </li>
+        <li><a href="#"onclick="greenColor()">绿色皮肤</a> </li>
+        <li><a href="#"onclick="orangeColor()">橙色皮肤</a> </li>
+    </ul>
+    <div id="div1"></div>
+</body>
+</html>

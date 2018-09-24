@@ -1,0 +1,60 @@
+legend{
+	color: red;
+	font-size:30px;
+	font-weight: bold;
+}
+#fieldest1{
+	width: 600px;
+	margin-left:400px;
+}
+
+#div0{
+	/*background-color: gray;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#div1{
+	/*background-color: mediumpurple;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#div2{
+	/*background-color: red;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#div3{
+	/*background-color: lightskyblue;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+	
+}
+#div4{
+	/*background-color: darkorange;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#div5{
+	/*background-color: lawngreen;*/
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#div6{
+	border: 1px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: grey;
+	padding: 10px;
+}

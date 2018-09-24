@@ -11,8 +11,10 @@
 					alert("你的浏览器不支持LocalStorage，请你更新浏览器");	
 				}
 				else{
-					
 						var div6=document.getElementById("div6");
+						if(localStorage.getItem("bgc")) {
+							div6.style.backgroundColor=localStorage.getItem("bgc");
+						}
 						for(var i=0;i<6;i++)
 						{
 							
@@ -23,9 +25,10 @@
 								}
 								div6.style.backgroundColor=this.style.backgroundColor;
 								var thisColor=div6.style.backgroundColor;
-								localStorage.setItem("bgc",thisColor);
-								localStorage.getItem('bgc');
+								
 								this.style.marginTop = "-4px";
+								localStorage.setItem("bgc",thisColor);
+								div6.style.backgroundColor=localStorage.getItem('bgc');
 							}
 						}
 						

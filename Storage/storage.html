@@ -14,42 +14,52 @@
 					function gray()
 				    {
 					   var div1=document.getElementById("div1");
+					   var div2=document.getElementById("moren")
 					   div1.style.backgroundColor=colorArray[0];
 					   this.localStorage.setItem('divBackColor',colorArray[0]);
+					   div2.style.marginTop="-4px";
 					}
 					function purple()
 				    {
 					   var div1=document.getElementById("div1");
 					   div1.style.backgroundColor=colorArray[1];
 					   this.localStorage.setItem('divBackColor',colorArray[1]);
+					   document.getElementById('purple').style.marginTop="-4px";
 					}
 				    function red()
 				    {
 				        var div1=document.getElementById("div1");
 				        div1.style.backgroundColor=colorArray[2];
 				       this.localStorage.setItem('divBackColor',colorArray[2]);
+				       document.getElementById('red').style.marginTop="-4px";
 					}
 				    function bule()
 				    {
 				        var div1=document.getElementById("div1");
 				        div1.style.backgroundColor=colorArray[3];
 				        this.localStorage.setItem('divBackColor',colorArray[3]);
+				        document.getElementById('bule').style.marginTop="-4px";
 				    }
 				     function orange()
 				    {
 				        var div1=document.getElementById("div1");
 				        div1.style.backgroundColor=colorArray[4];
 				        this.localStorage.setItem('divBackColor',colorArray[4]);
+				        document.getElementById('orange').style.marginTop="-4px";
+				        
 				    }
 				     function green()
 				    {
 				        var div1=document.getElementById("div1");
 				        div1.style.backgroundColor=colorArray[5];
 				        this.localStorage.setItem('divBackColor',colorArray[5]);
+				        document.getElementById('green').style.marginTop="-4px";
+				        
 				    }
 				    window.onload=function colorLoad()
 			    	{
 			    		document.getElementById("div1").style.backgroundColor=this.localStorage.getItem('divBackColor');
+			    		
 			    	}
 			   }
 		</script>

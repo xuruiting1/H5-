@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>随机圆</title>
+		<style>
+			#canvas{
+				border: 1px solid saddlebrown;
+				background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="500" height="500"></canvas>
+		<script>
+			var convas=document.getElementById("canvas");
+			var context=canvas.getContext("2d");
+			for(var i=1;i<70;i++)
+			{
+				context.beginPath();
+				context.arc(100*(Math.ceil(Math.random()*10)),(Math.ceil(Math.random()*10))*50,(Math.ceil(Math.random()*25))*2,0,2*Math.PI);
+				context.closePath();
+				var r=Math.floor(Math.random()*256);
+				var g=Math.floor(Math.random()*256);
+				var b=Math.floor(Math.random()*256);
+				var o=Math.random();
+				o=o.toFixed(1);
+				var a="#"+r+g+b;
+				context.fillStyle=a;
+				context.globalAlpha=o;
+				context.fill();
+				context.stroke();
+			}
+		</script>
+		
+	
+	</body>
+</html>

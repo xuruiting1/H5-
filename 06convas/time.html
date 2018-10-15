@@ -16,6 +16,9 @@
 		<script>
 			var convas=document.getElementById("canvas");
 			var ctx=canvas.getContext("2d");
+			//定时器
+			setInterval(draw, 1000);
+			draw(); //先执行一次，因为最初的时候啥都没有
 			function drawBg(){
 				ctx.save();
 				ctx.translate(300,300);
@@ -114,9 +117,7 @@
 			    Center();
 			    ctx.restore();
 			}
-			//定时器
-			var timer=setInterval(draw, 1000);
-			draw(); //先执行一次，因为最初的时候啥都没有
+			
 
 
 

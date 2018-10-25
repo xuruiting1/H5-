@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-image: url(images/bg3.JPG);
+			}
+			.content{
+				width: 1200px;
+				height: 250px;
+				margin:0 auto;
+				/*border: 1px soild red;
+				background-color: red;*/
+				margin: 0 auto;
+				margin-top: 40px;
+			}
+			.divimg{
+				width: 150px;
+				height: 180px;
+				background-color: white;
+				float: left;
+				margin-right: 18px;
+				margin-left: 18px;
+			}
+			.divimg img{
+				width: 130px;
+				height: 130px;
+				text-align: center;
+				padding: 10px;
+				
+				/*float: left;*/
+			}
+			/*设置旋转角度*/
+			#img1{
+				width: 200px;
+				transform: rotate(-5deg);
+			}
+			#img2{
+				transform: rotate(-2deg);
+				margin-top: -10px;
+			}
+			#img3{
+				width: 180px;
+				transform: rotate(-10deg);
+			}
+			#img4{
+				transform: rotate(-2deg);
+			}
+			#img5{
+				transform: rotate(5deg);
+			}
+			#img6{
+				transform: rotate(-8deg);
+			}
+			/*鼠标滑过变换*/
+			
+			#img1:hover{
+				width: 200px;
+				transform: rotate(0deg) scale(1.3,1.3);
+			}
+			#img2:hover{
+				transform: rotate(0deg) scale(1.3,1.3);
+				margin-top: -10px;
+			}
+			#img3:hover{
+				width: 180px;
+				transform: rotate(0deg) scale(1.3,1.3);
+			}
+			#img4:hover{
+				transform: rotate(0deg) scale(1.3,1.3);
+			}
+			#img5:hover{
+				transform: rotate(0deg) scale(1.3,1.3);
+			}
+			#img6:hover{
+				transform: rotate(0deg) scale(1.3,1.3);
+			}
+			
+			#img1 img{
+				width: 180px;
+			}
+			#img3 img{
+				width: 160px;
+			}
+			/*文字描述样式处理*/
+			span{
+				width: 150px;
+				height: 20px;
+				text-align: center;
+				float: left;
+				margin: 0 auto;
+				color: #333;
+			}
+			#meet{
+				width: 200px;
+				height: 20px;
+				text-align: center;
+				float: left;
+				margin: 0 auto;
+				
+			}
+			#sleep{
+				width: 180px;
+				height: 20px;
+				text-align: center;
+				float: left;
+				margin: 0 auto;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div id="img1" class="divimg">
+				<img src="images/11.jpg" />
+				<span id="meet">相识</span>
+			</div>
+			<div id="img2" class="divimg">
+				<img src="images/22.jpg" />
+				<span>凝视</span>
+			</div>
+			<div id="img3" class="divimg">
+				<img src="images/33.jpg" />
+				<span id="sleep">甜睡</span>
+			</div>
+			<div id="img4" class="divimg">
+				<img src="images/44.jpg" />
+				<span>逗乐</span>
+			</div>
+			<div id="img5" class="divimg">
+				<img src="images/55.jpg" />
+				<span>奔跑</span>
+			</div>
+			<div id="img6" class="divimg">
+				<img src="images/66.jpg" />
+				<span>漠视</span>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -6,15 +6,16 @@
 		<style>
 			#canvas{
 				/*border: 1px solid saddlebrown;*/
-				margin-left:700px;
+				/*margin-left:700px;*/
 				font-size: 1.2em;
+				margin:0 auto;
 			}
 		</style>
 	</head>
 	<body>
 		<canvas id="canvas" width="800" height="800" ></canvas>
 		<script>
-			var convas=document.getElementById("canvas");
+			var canvas=document.getElementById("canvas");
 			var ctx=canvas.getContext("2d");
 			//定时器
 			setInterval(draw, 1000);
@@ -117,14 +118,6 @@
 			    Center();
 			    ctx.restore();
 			}
-			
-
-
-
-
-
-
-			
 		</script>
 	</body>
 </html>
